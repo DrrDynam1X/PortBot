@@ -1,3 +1,11 @@
+app.get("/", (req, res) => {
+  res.json({
+    status: "online",
+    bot: "PortNotifier",
+    message: "API is running"
+  });
+});
+
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
